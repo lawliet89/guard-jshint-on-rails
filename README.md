@@ -1,38 +1,38 @@
 Guard::JshintOnRails 
 =============
 This project is a fork from wireframe's [guard-jslint-on-rails](https://github.com/wireframe/guard-jslint-on-rails).
-Instead of using the original jslint-on-rails, [jshint-on-rails](https://github.com/liquid/jshint_on_rails) is used here.
+Instead of using the original [jslint-on-rails](https://github.com/psionides/jslint_on_rails), [jshint-on-rails](https://github.com/liquid/jshint_on_rails) is used here.
 
 =============
 
-Guard plugin to verify that Javascript files comply with [JSLint](http://www.jslint.com/) validations.
+Guard plugin to verify that Javascript files comply with [JSHint](http://jslint.com/) validations.
 
 
 Install
 -------
 
-Install and configure the [JSLint on Rails](https://github.com/psionides/jslint_on_rails) gem.
+Install and configure the [JSHint on Rails](https://github.com/liquid/jshint_on_rails) gem.
 
 Install the gem:
 
-    $ gem install guard-jslint-on-rails
+    $ gem install guard-jshint-on-rails
 
 Add it to your Gemfile (inside development group):
 
 ``` ruby
-gem 'guard-jslint-on-rails'
+gem 'guard-jshint-on-rails'
 ```
 
 Add guard definition to your Guardfile by running this command:
 
-    $ guard init jslint-on-rails
+    $ guard init jshint-on-rails
 
 Configuration
 -------------
 
 ``` ruby
 # Guardfile
-guard 'jslint-on-rails' do
+guard 'jshint-on-rails' do
   # watch for changes to application javascript files
   watch(%r{^app/assets/javascripts/.*\.js$})
 end

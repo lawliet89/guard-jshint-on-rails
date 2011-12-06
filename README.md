@@ -1,4 +1,8 @@
-Guard::JslintOnRails 
+Guard::JshintOnRails 
+=============
+This project is a fork from wireframe's [guard-jslint-on-rails](https://github.com/wireframe/guard-jslint-on-rails).
+Instead of using the original jslint-on-rails, [jshint-on-rails](https://github.com/liquid/jshint_on_rails) is used here.
+
 =============
 
 Guard plugin to verify that Javascript files comply with [JSLint](http://www.jslint.com/) validations.

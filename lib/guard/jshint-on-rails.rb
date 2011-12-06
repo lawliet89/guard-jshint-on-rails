@@ -8,9 +8,12 @@ module Guard
     VERSION = '0.0.8'
 
     def initialize(watchers=[], options={})
-      @config_path = File.join(Dir.pwd, options[:config_path] || 'config/jslint.yml')
-      puts "Guard::JsHintOnRails is using '#{@config_path}'"
       super
+      @config_path = File.join(Dir.pwd, options[:config_path] || 'config/jslint.yml')
+    end
+
+    def start
+      UI.info "Guard::JsHintOnRails started using #{@config_path}"
     end
 
     def run_on_change(paths)

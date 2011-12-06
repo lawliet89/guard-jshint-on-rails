@@ -35,9 +35,9 @@ Configuration
 guard 'jslint-on-rails' do
   # watch for changes to application javascript files
   watch(%r{^app/assets/javascripts/.*\.js$})
-  # watch for changes to the JSLint configuration
-  watch('config/jslint.yml')
 end
 ```
+
+Additional option `:config_path` is available to specify the path to the yaml file.
 
 Please read [Guard doc](https://github.com/guard/guard#readme) for more information about the Guardfile DSL.

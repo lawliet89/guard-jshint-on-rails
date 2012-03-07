@@ -5,7 +5,6 @@ require 'jshint'
 
 module Guard
   class JshintOnRails < Guard
-    VERSION = '0.0.8'
 
     def initialize(watchers=[], options={})
       super
@@ -22,7 +21,7 @@ module Guard
         output = capture_output do
           lint = ::JSHint::Lint.new(
             :paths => paths,
-            :config_path => @config_path 
+            :config_path => @config_path
           )
           lint.run
         end

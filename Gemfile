@@ -1,4 +1,4 @@
 source "http://rubygems.org"
 
-# Specify your gem's dependencies in guard-jslint-on-rails.gemspec
-gemspec
+gem 'guard'
+gem 'jshint_on_rails'

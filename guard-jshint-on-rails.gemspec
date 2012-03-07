@@ -1,16 +1,14 @@
-# -*- encoding: utf-8 -*-
-$:.push File.expand_path("../lib", __FILE__)
-require "guard/jshint-on-rails"
+# -*- encoding: utf-8 -*-s
 
 Gem::Specification.new do |s|
   s.name        = "guard-jshint-on-rails"
-  s.version     = Guard::JshintOnRails::VERSION
+  s.version     = "0.0.1"
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["Ryan Sonnek"]
-  s.email       = ["ryan@codecrate.com"]
-  s.homepage    = ""
+  s.authors     = ["Johnson Liang", "Andrew Liu", "Ryan Sonnek"]
+  s.email       = ["johnsonliang7@gmail.com", "ryan@codecrate.com"]
+  s.homepage    = "https://github.com/MrOrz/guard-jshint-on-rails"
   s.summary     = %q{Guard Javascript changes to ensure JSHint complience}
-  s.description = %q{Guard Javascript changes to ensure JSHint complience}
+  s.description = %q{Guard Javascript changes, ensuring JSHint complience}
 
   s.rubyforge_project = "guard-jshint-on-rails"
 
@@ -19,6 +17,6 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_dependency 'guard', '>= 0.4.0'
-  s.add_dependency 'jshint', '>= 0.1.1'
+  s.add_dependency 'guard', '>= 1.0.0'
+  s.add_dependency 'jshint', '>= 1.0.2'
 end

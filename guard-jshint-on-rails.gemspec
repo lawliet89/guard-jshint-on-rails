@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name        = "guard-jshint-on-rails"
-  s.version     = "0.0.1"
+  s.version     = "0.0.2"
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Johnson Liang", "Andrew Liu", "Ryan Sonnek"]
   s.email       = ["johnsonliang7@gmail.com", "ryan@codecrate.com"]
@@ -18,5 +18,5 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_dependency 'guard', '>= 1.0.0'
-  s.add_dependency 'jshint', '>= 1.0.2'
+  s.add_dependency 'jshint_on_rails', '>= 1.0.2'
 end
